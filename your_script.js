@@ -1,5 +1,5 @@
 // Define the URL of your Google Cloud Function
-const cloudFunctionUrl = 'YOUR_CLOUD_FUNCTION_URL_HERE';
+const cloudFunctionUrl = 'https://us-central1-cbbbot-413503.cloudfunctions.net/barrysnipesv3';
 
 // Function to send a request to the cloud function
 async function fetchResponse(input) {
