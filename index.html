@@ -12,7 +12,14 @@
         <input type="text" id="userInput" name="userInput">
         <button type="submit">Submit</button>
     </form>
-    <div id="response"></div>
+    <div id="conversation">
+        <div id="userInputContainer" style="display: none;">
+            <strong>You:</strong> <span id="userInputText"></span>
+        </div>
+        <div id="botResponseContainer" style="display: none;">
+            <strong>Bot:</strong> <span id="botResponseText"></span>
+        </div>
+    </div>
 
     <script src="your_script.js"></script>
 </body>
