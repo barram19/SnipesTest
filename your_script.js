@@ -17,8 +17,15 @@ async function fetchResponse(input) {
 async function handleSubmit(event) {
     event.preventDefault();
     const userInput = document.getElementById('userInput').value;
+    // Display user input
+    document.getElementById('userInputText').innerText = userInput;
+    document.getElementById('userInputContainer').style.display = 'block';
+
+    // Fetch response from cloud function
     const response = await fetchResponse(userInput);
-    document.getElementById('response').innerText = response;
+    // Display bot response
+    document.getElementById('botResponseText').innerText = response;
+    document.getElementById('botResponseContainer').style.display = 'block';
 }
 
 // Attach event listener to the form
